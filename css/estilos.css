@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*Definicion de colores en la pagina*/
+:root {
+	--fondoPrimario: #F2F2F2;
+	--colorOscuro: #333333;
+	--colorClaro: #999999;
+	--colorResaltar: #F7C221;
+    --colorSecundario:#666666;
+    --colorLetrasClaras: #ffffff;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--colorClaro);
+    width: 80%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Barra Navegación */ 
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    background-color:var(--colorResaltar);
+    color: var(--colorLetrasClaras);
+}
+
+.nav-list{
+    display: inline-flex;
+    font-size: 1.8rem;
+}
+
+.nav-list li{
+    padding: 0px;
+}
+
+.navbar .active{
+    border-bottom: 2px solid var(--colorSecundario);
+}
+
+.nav-list li a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding: 14px 30px 14px 30px;
+    color: var(--colorLetrasClaras);
+}
+
+.nav-list li a:hover {
+    background-color: var(--colorSecundario);
+    cursor: pointer;
+}
+/* /Barra Navegación */ 
+
+
+/*Contenido Principal*/
+main {
+    display: flex;
+}
+
+/*Contenedor Izquierda*/
+.container-izq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 10px auto;
+}
+
+.container-izq .login{
+    background-color: var(--colorSecundario);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; 
+}
+
+.container-izq .login .header-login{
+    background-color: var(--colorOscuro);
+    color: var(--colorLetrasClaras);
+    padding: 8px;
+    width: 100%;
+}
+
+.container-izq .login .formulario{
+    padding: 10px;
+}
+
+.container-izq .login .formulario label{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.container-izq .login .formulario label input{
+    padding: 3px;    
+}
+
+.container-izq .login .footer-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-izq .login .footer-login .btn {
+    background: var(--colorResaltar);
+    padding: 5px;
+    border: 2px solid var(--colorOscuro);
+    cursor: pointer;
+    color: var(--colorOscuro);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.container-izq .transacciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 10px;
+    background:var(--colorSecundario);
+    width: 100%;
+    
+}
+
+.container-izq .transacciones h4{
+    text-align: center;
+    color:var(--colorResaltar);
+    background-color: var(--colorOscuro);
+    padding: 5px;
+    
+}
+
+.container-izq .transacciones ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.container-izq .transacciones ul li{
+    color:var(--colorLetrasClaras);
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid var(--colorLetrasClaras);
+    width: 90%;
+}
+
+
+/*Fin Contenedor Izquierda*/
+
+/*Contenedor Derecha*/
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(200px, auto);
+    gap: 1em;
+    padding: 1em;
+}
+
+
+.grid > div:hover{
+    border: 2px solid var(--colorOscuro);
+}
+
+.grid > div {
+    background-color:var(--colorSecundario);
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    text-align: center;
+}
+
+.grid > div h4 {
+    background-color: var(--colorOscuro);
+    color: var(--colorLetrasClaras);
+    text-align: center;
+    padding: 1em;
+}
+
+.grid > div img {
+    height: 180px;
+}
+
+.grid > div p {
+    text-align: justify;
+    padding: 1em;
+}
+/*Fin Contenedor Derecha*/
+
+/* Fin Contenido Principal*/
+
+/* Footer*/
+footer {
+    background-color: var(--colorOscuro);
+    color: var(--colorLetrasClaras);
+    text-align: center;
+    padding: 1em;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+/*End Footer*/
+
+
